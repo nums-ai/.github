@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: Apache-2.0
+name: Feature request
+description: Suggest a feature or behavior change.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use redacted or synthetic examples; omit secrets and personal or customer data.
+        Report suspected vulnerabilities privately to [trust@nums.world](mailto:trust@nums.world).
+        For questions, use Discussions when enabled; otherwise, use Issues.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected users
+      description: Explain the problem, who it affects, and a concrete use case.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Desired behavior
+      description: Describe the desired result and how a user could check it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or scope (optional)
+      description: Add useful alternatives, workarounds, or scope and compatibility considerations.
+    validations:
+      required: false

@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: Apache-2.0
+name: Bug report
+description: Report a bug in a package or service.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use redacted or synthetic examples; omit secrets and personal or customer data.
+        Report suspected vulnerabilities privately to [trust@nums.world](mailto:trust@nums.world).
+        For questions, use Discussions when enabled; otherwise, use Issues.
+  - type: textarea
+    id: description
+    attributes:
+      label: Observed and expected behavior
+      description: Describe what happened and what you expected. Include relevant, redacted error output.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce (optional)
+      description: Share safe steps or a small example. Otherwise, describe when the bug occurs and why you cannot provide a reproduction.
+      placeholder: |
+        1. Set up ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and version (optional)
+      description: Include the affected version or commit and relevant OS, runtime, dependencies, or configuration.
+    validations:
+      required: false
